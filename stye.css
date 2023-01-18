@@ -1,0 +1,140 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Open+Sans:wght@400;600;700&Display=Swap");
+
+* {
+    Outline: None;
+    Box-Sizing: Border-Box;
+    }
+    Body {
+    Background-Image: Linear-Gradient(
+    0deg,
+    Rgba(247, 247, 247, 1) 23.8%,
+    Rgba(252, 221, 221, 1) 92%
+    );
+    Font-Family: "Open Sans", Sans-Serif;
+    Margin: 0;
+    Height: 100vh;
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Flex-Direction: Column;
+    }
+    .Music-Container {
+    Background-Color: #Fff;
+    Border-Radius: 15px;
+    Box-Shadow: 0 20px 20px 0 Rgba(252, 169, 169, 0.6);
+    Display: Flex;
+    Padding: 20px 30px;
+    Position: Relative;
+    Margin: 100px 0;
+    Z-Index: 10;
+    }
+    .Img-Container {
+    Position: Relative;
+    Width: 110px;
+    }
+    .Img-Container::After {
+    Content: "";
+    Background-Color: #Fff;
+    Border-Radius: 50%;
+    Position: Absolute;
+    Bottom: 100%;
+    Left: 50%;
+    Width: 20px;
+    Height: 20px;
+    Transform: Translate(-50%, 50%);
+    Box-Shadow: 0 0 0px 10px #000;
+    }
+    .Img-Container Img {
+    Border-Radius: 50%;
+    Object-Fit: Cover;
+    Height: 110px;
+    Width: Inherit;
+    Position: Absolute;
+    Bottom: 0;
+    Left: 0;
+    Animation: Rotate 3s Linear Infinite;
+    Animation-Play-State: Paused;
+    }
+    .Music-Container.Play .Img-Container Img {
+    Animation-Play-State: Running;
+    }
+    @Keyframes Rotate {
+    From {
+    Transform: Rotate(0deg);
+    }
+    To {
+    Transform: Rotate(360deg);
+    }
+    }
+    .Navigation {
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Z-Index: 1;
+    }
+    .Action-Btn {
+    Background-Color: #Fff;
+    Border: 0;
+    Color: #Dfdbdf;
+    Font-Size: 20px;
+    Cursor: Pointer;
+    Padding: 10px;
+    Margin: 0 20px;
+    }
+    .Action-Btn.Action-Btn-Big {
+    Color: #Cdc2d0;
+    Font-Size: 30px;
+    }
+    .Music-Info {
+    Background-Color: Rgba(255, 255, 255, 0.5);
+    Width: Calc(100% - 40px);
+    Padding: 10px 10px 10px 150px;
+    Border-Radius: 15px 15px 0px 0px;
+    Position: Absolute;
+    Top: 0;
+    Left: 20px;
+    Opacity: 0;
+    Transform: TranslateY(0%);
+    Transition: Transform 0.3s Ease-In, Opacity 0.3s Ease-In;
+    Z-Index: 0;
+    }
+    .Music-Container.Play .Music-Info {
+    Opacity: 1;
+    Transform: TranslateY(-100%);
+    }
+    .Music-Info H4 {
+    Margin: 0;
+    }
+    .Progress-Container {
+    Background-Color: #Fff;
+    Border: 5px;
+    Cursor: Pointer;
+    Margin: 10px 0;
+    Height: 4px;
+    Width: 100%;
+    }
+    .Progress {
+    Background-Color: #Fe8daa;
+    Border-Radius: 5px;
+    Height: 100%;
+Width: 0%;
+Transform: Width 0.1s Linear;
+}
+* {
+    Outline: None;
+    Box-Sizing: Border-Box;
+    }
+    Body {
+    Background-Image: Linear-Gradient(
+    0deg,
+    Rgba(247, 247, 247, 1) 23.8%,
+    Rgba(252, 221, 221, 1) 92%
+    );
+    Font-Family: "Open Sans", Sans-Serif;
+    Margin: 0;
+    Height: 100vh;
+    Display: Flex;
+    Align-Items: Center;
+    Justify-Content: Center;
+    Flex-Direction: Column;
+    }
